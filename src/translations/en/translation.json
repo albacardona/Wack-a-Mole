@@ -1,8 +1,7 @@
 {
   "homepage": {
     "intro": {
-      "title": "Welcome to my website!",
-      "description": "I am a web developer passionate about technology, sports and cats. I love creating responsive and performant websites and web applications with modern technologies."
+      "title": "Welcome to my website!"
     }
   },
   "language_selector": {
