@@ -1,0 +1,13 @@
+{
+  "files": {
+    "wack-a-mole": {
+      "path": "src/translations/%LANGUAGE%/translation.json",
+      "file_format": "i18next",
+      "use_lowercase_directory_name": true
+    }
+  },
+  "branches": {
+    "target": "main",
+    "push": "chore/new-translations"
+  }
+}

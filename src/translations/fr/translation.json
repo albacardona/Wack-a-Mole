@@ -1,0 +1,14 @@
+{
+  "homepage": {
+    "intro": {
+      "title": "Bienvenue sur mon site!",
+      "description": "Je suis développeuse web, passionnée par la technologie, le sport et les chats. J'aime créer des sites et des applications web avec des technologies modernes, réactives et performantes."
+    }
+  },
+  "language_selector": {
+    "spanish": "Espagnol",
+    "english": "Anglais",
+    "french": "Français",
+    "catalan": "Catalan"
+  }
+}

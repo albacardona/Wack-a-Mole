@@ -1,0 +1,14 @@
+{
+  "homepage": {
+    "intro": {
+      "title": "Benvingut/da a la meva web!",
+      "description": "Sóc una desenvolupadora web apassionada per la tecnologia, els esports i els gats. M'encata crear llocs i aplicacions web amb tecnologies modernes, reactius i eficients."
+    }
+  },
+  "language_selector": {
+    "spanish": "Espanyol",
+    "english": "Anglès",
+    "french": "Francès",
+    "catalan": "Català"
+  }
+}

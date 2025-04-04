@@ -3,22 +3,27 @@ import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
 import svgrPlugin from 'vite-plugin-svgr';
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
 
 export default defineConfig(() => {
   return {
     server: {
       port: 3000,
+      strictPort: true,
     },
-    base: '/',
     plugins: [
       react(),
       svgrPlugin(),
-      tailwindcss(),
       checker({
         typescript: true,
       }),
     ],
+    css: {
+      postcss: {
+        plugins: [tailwindcss(), autoprefixer()],
+      },
+    },
     build: {
       outDir: 'dist',
     },
