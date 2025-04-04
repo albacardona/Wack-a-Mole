@@ -12,6 +12,7 @@ module.exports = {
       boxShadow: {
         xs: '0 0 2px 0 rgba(41, 50, 60, 0.5)',
         ring: '0px 0px 0px 4px rgba(17,187,166,0.3)',
+        inner: 'inset 0px 0px 10px 7px rgba(0,0,0,0.5)',
       },
       fontFamily: {
         game: ['Press Start 2P'],
@@ -25,6 +26,10 @@ module.exports = {
           secondary: {
             DEFAULT: 'var(--background-secondary)',
             hover: 'var(--background-secondary-hover)',
+          },
+          tertiary: {
+            DEFAULT: 'var(--background-tertiary)',
+            hover: 'var(--background-tertiary-hover)',
           },
         },
         fg: {

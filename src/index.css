@@ -9,11 +9,12 @@
   :root {
     --background-primary: #f0bc42;
     --background-secondary: #2b3d41;
+    --background-tertiary: #6c4330;
     --foreground-primary: #2b3d41;
     --foreground-secondary: #b3b3b3;
     --primary: #4ba3c3;
     --accent: #ffb74d;
-    --border-primary: #1e1e1e;
+    --border-primary: #fff8eb;
   }
 }
 
@@ -25,6 +26,11 @@ html {
   font-family: "Press Start P2", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
 ::-webkit-scrollbar {
   -webkit-appearance: none;
