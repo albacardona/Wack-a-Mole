@@ -13,7 +13,7 @@ const GameContext = createContext<GameContextType | undefined>(undefined);
 
 export const GameProvider = ({ children }: { children: React.ReactNode }) => {
   const [moles, setMoles] = useState<string[]>(new Array(9).fill(0).map(() => crypto.randomUUID()));
-  const [time, setTime] = useState<number>(0);
+  const [time, setTime] = useState<number>(60);
   const [speed, setSpeed] = useState<number>(0);
 
   const setQuantityOfMoles = useCallback((quantity: number) => {

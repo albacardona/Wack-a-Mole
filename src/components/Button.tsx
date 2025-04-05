@@ -10,6 +10,7 @@ const buttonVariants = cva(
           'bg-bg-secondary border-bg-secondary text-fg-primary shadow-button-primary active:shadow-button-primary-active',
         accent:
           'bg-accent border-accent text-fg-primary shadow-button-accent active:shadow-button-accent-active',
+        ghost: 'bg-transparent p-0 m-0 w-fit',
       },
     },
     defaultVariants: {
@@ -41,7 +42,6 @@ export const Button = ({ value, children, className, variant, isActive, onClick 
       type="button"
       className={clsx(
         {
-          'w-auto': true,
           'shadow-none translate-y-2': isActive,
           'bg-bg-secondary-light': isActive && variant === 'default',
           'bg-accent-light': isActive && variant === 'accent',

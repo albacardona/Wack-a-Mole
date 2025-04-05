@@ -7,7 +7,8 @@ import {
   useState,
   useRef,
 } from 'react';
-import { Modal } from '@/components/Modals/Modal';
+import { ModalTemplate } from '@/components/Modals/ModalTemplate';
+import { useOnBlur } from '@/hooks/useOnBlur';
 
 interface ContextTypes {
   openModal: boolean;
@@ -40,6 +41,8 @@ export const ModalProvider = ({ children }: React.PropsWithChildren) => {
     setModalData(null);
   }, []);
 
+  useOnBlur(modalRef, closeModal);
+
   const value = useMemo(
     () => ({ openModal, showModal, closeModal, modalData }),
     [openModal, showModal, closeModal, modalData],
@@ -48,7 +51,7 @@ export const ModalProvider = ({ children }: React.PropsWithChildren) => {
   return (
     <ModalContext.Provider value={value}>
       {children}
-      <Modal ref={modalRef} />
+      <ModalTemplate ref={modalRef} />
     </ModalContext.Provider>
   );
 };

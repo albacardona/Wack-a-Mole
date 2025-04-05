@@ -6,16 +6,20 @@ import { Button } from '../Button';
 import { GameSettings } from '@/types/enums';
 
 interface SelectedButtons {
-  time?: number;
-  speed?: number;
   quantity?: number;
+  speed?: number;
+  time?: number;
 }
 
-export const StartingModal = () => {
+export const SettingsModal = () => {
   const { t } = useTranslation();
 
-  const { setQuantityOfMoles, handleSelectSpeed, handleSelectTime } = useGame();
-  const [selectedButtons, setSelectedButtons] = useState<SelectedButtons>({});
+  const { moles, speed, time, setQuantityOfMoles, handleSelectSpeed, handleSelectTime } = useGame();
+  const [selectedButtons, setSelectedButtons] = useState<SelectedButtons>({
+    quantity: moles.length,
+    speed,
+    time,
+  });
 
   const handleClickSetting = (key: string, value: number) => {
     setSelectedButtons((prev) => ({
@@ -23,10 +27,10 @@ export const StartingModal = () => {
       [key]: value,
     }));
 
-    if (key === GameSettings.SPEED) {
-      handleSelectSpeed(value);
-    } else if (key === GameSettings.QUANTITY) {
+    if (key === GameSettings.QUANTITY) {
       setQuantityOfMoles(value);
+    } else if (key === GameSettings.SPEED) {
+      handleSelectSpeed(value);
     } else if (key === GameSettings.TIME) {
       handleSelectTime(value);
     }
