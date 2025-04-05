@@ -9,5 +9,41 @@
     "english": "Anglès",
     "french": "Francès",
     "catalan": "Català"
+  },
+  "button": {
+    "speed": {
+      "normal": "Normal",
+      "fast": "Ràpid",
+      "crazy": "Bogeria"
+    },
+    "start": "Començar",
+    "reset_all": "Reiniciar butons",
+    "play_again": "Tornar a jugar"
+  },
+  "modal": {
+    "start": {
+      "title": "Configuració",
+      "body": "Selecciona el número de talps amb els que vols jugar, la velocitat i el temps de joc.",
+      "select_time": "Temps",
+      "select_speed": "Velocitat",
+      "select_quantity": "Quantitat",
+      "note": "Nota: quant més elevada sigui la velocitat escollida, més punts guanyes."
+    },
+    "end": {
+      "title": "Temps esgotat!",
+      "body": {
+        "perfect": "Increïble! Pots compartir la teva puntuació per ensenyar-li a tothom com de bo(na) ets!",
+        "good": "Genial! Tornar a jugar per millorar la teva reacció!",
+        "bad": "Vaja... Semble que el teu ratolí té algun tipus de problema, oi? No et preocupis, pots tornar a jugar i aquí no ha passat res."
+      },
+      "share": "Compartir a:"
+    }
+  },
+  "game": {
+    "counters": {
+      "time": "Temps:",
+      "speed": "Velocitat:",
+      "score": "Puntuació:"
+    }
   }
 }
