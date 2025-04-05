@@ -1,8 +1,8 @@
-# Wack a Mole
+# Whack a Mole
 
 New version of the game I developed during my bootcamp at Ironhack. At that time I developed the website using the DOM manipulation with Vanilla JS.
 
-You can find here the original [repo](https://github.com/albacardona/Whack-a-mole) and the [demo](https://albacardona.github.io/Whack-a-mole/).
+You can find here the original [repo](https://github.com/albacardona/Whack-a-mole-VanillaJs) and the [demo](https://albacardona.github.io/Whack-a-mole-VanillaJs/).
 
 Four years after finishing the bootcamp, with a bit more experience, I have decided to redo the whole game using the stack in which I have developed the most: React and Typescript.
 For styling, I used the CSS framework Tailwind CSS.
