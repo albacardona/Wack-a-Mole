@@ -1,7 +1,7 @@
 {
   "homepage": {
     "intro": {
-      "title": "Bienvenue sur mon site!"
+      "title": "Bienvenue sur mon site !"
     }
   },
   "language_selector": {
@@ -9,5 +9,41 @@
     "english": "Anglais",
     "french": "Français",
     "catalan": "Catalan"
+  },
+  "button": {
+    "speed": {
+      "normal": "Normal",
+      "fast": "Rapide",
+      "crazy": "Fou"
+    },
+    "start": "Commencer",
+    "reset_all": "Réinitialiser boutons",
+    "play_again": "Rejouer"
+  },
+  "modal": {
+    "start": {
+      "title": "Configuration",
+      "body": "Sélectionnez le nombre de taupes avec lesquelles vous voulez jouer, la vitesse et le temps de jeu.",
+      "select_time": "Temps",
+      "select_speed": "Vitesse",
+      "select_quantity": "Quantité",
+      "note": "Remarque : plus la vitesse choisie est élevée, plus vous gagnez de points."
+    },
+    "end": {
+      "title": "Temps écoulé !",
+      "body": {
+        "perfect": "Excellent ! Vous pouvez partager votre score pour montrer à tout le monde à quel point vous êtes fort(e) !",
+        "good": "Bravo ! Jouez à nouveau pour améliorer votre réaction !",
+        "bad": "Waouh... Votre souris semble avoir un problème, n'est-ce pas ? Ne vous inquiétez pas, vous pouvez rejouer et il ne s'est rien passé."
+      },
+      "share": "Partager sur:"
+    }
+  },
+  "game": {
+    "counters": {
+      "time": "Temps:",
+      "speed": "Vitesse:",
+      "score": "Score:"
+    }
   }
 }
