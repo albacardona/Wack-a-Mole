@@ -12,12 +12,12 @@ const root = createRoot(container as HTMLElement);
 
 root.render(
   <StrictMode>
-    <ModalProvider>
-      <GameProvider>
+    <GameProvider>
+      <ModalProvider>
         <I18nextProvider i18n={i18n}>
           <App />
         </I18nextProvider>
-      </GameProvider>
-    </ModalProvider>
+      </ModalProvider>
+    </GameProvider>
   </StrictMode>,
 );

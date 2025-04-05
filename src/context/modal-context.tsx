@@ -7,7 +7,7 @@ import {
   useState,
   useRef,
 } from 'react';
-import { Modal } from '@/components/Modal';
+import { Modal } from '@/components/Modals/Modal';
 
 interface ContextTypes {
   openModal: boolean;

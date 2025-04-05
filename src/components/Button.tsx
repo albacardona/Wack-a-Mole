@@ -2,7 +2,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import clsx from 'clsx';
 
 const buttonVariants = cva(
-  'cursor-none py-3 px-2 text-sm font-game rounded-md transition-all duration-150 ease-in-out active:translate-y-2 active:border-b-[0px] border-b-[1px]',
+  'cursor-none w-32 py-3 px-2 text-sm font-game rounded-md transition-all duration-150 ease-in-out active:translate-y-2 active:border-b-[0px]',
   {
     variants: {
       variant: {
@@ -40,7 +40,12 @@ export const Button = ({ value, children, className, variant, isActive, onClick 
     <button
       type="button"
       className={clsx(
-        { 'w-auto': true, 'bg-bg-secondary-light shadow-none translate-y-2': isActive },
+        {
+          'w-auto': true,
+          'shadow-none translate-y-2': isActive,
+          'bg-bg-secondary-light': isActive && variant === 'default',
+          'bg-accent-light': isActive && variant === 'accent',
+        },
         buttonVariants({ variant, className }),
       )}
       onClick={handleClick}
