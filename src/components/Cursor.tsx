@@ -39,7 +39,7 @@ export const Cursor = () => {
       ref={cursor}
       src={hammer}
       alt="cursor"
-      className="z-10 pointer-events-none absolute size-16 overflow-hidden origin-[100%_100%] translate-x-[-50%] translate-y-[-50%]"
+      className="z-20 pointer-events-none absolute size-16 overflow-hidden origin-[100%_100%] translate-x-[-50%] translate-y-[-50%]"
     />
   );
 };

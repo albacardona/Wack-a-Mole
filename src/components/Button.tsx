@@ -21,7 +21,7 @@ const buttonVariants = cva(
 interface ButtonProps {
   variant?: VariantProps<typeof buttonVariants>['variant'];
   children?: React.ReactNode;
-  value: number | undefined;
+  value?: number;
   isActive?: boolean;
   className?: string;
   onClick: (value: number) => void;

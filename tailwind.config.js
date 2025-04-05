@@ -58,6 +58,7 @@ module.exports = {
           hover: 'var(--accent-hover)',
           light: 'var(--accent-light)',
         },
+        'modal-overlay': 'var(--modal-overlay)',
       },
       animation: {
         border: 'border 3s',

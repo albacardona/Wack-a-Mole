@@ -1,11 +1,14 @@
 import { Button } from '@/components/Button';
 import { Mole } from '@/components/Mole';
 import { useGame } from '@/context/game-context';
+import { useModal } from '@/context/modal-context';
+import { LinkExternal01 } from '@untitled-ui/icons-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export const Game = () => {
   const { t } = useTranslation();
+  const startGameModal = useModal();
   const { moles, speed, setQuantityOfMoles, handleSelectSpeed } = useGame();
   const [selectedButton, setSelectedButton] = useState<number | null>(null);
 
@@ -34,6 +37,15 @@ export const Game = () => {
               {item.label}
             </Button>
           ))}
+          <Button
+            onClick={() =>
+              startGameModal.showModal({
+                title: t('translation:modal.start.title'),
+                content: <LinkExternal01 />,
+              })
+            }
+            isActive={selectedButton === 0}
+          />
           {moles?.map((id, index) => (
             <Mole key={id} />
           ))}
