@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,13 +9,21 @@
 @layer base {
   :root {
     --background-primary: #f0bc42;
+    --background-primary-hover: #d2a337;
     --background-secondary: #2b3d41;
+    --background-secondary-hover: #232d2f;
+    --background-secondary-light: #36464a;
     --background-tertiary: #6c4330;
-    --foreground-primary: #2b3d41;
-    --foreground-secondary: #b3b3b3;
-    --primary: #4ba3c3;
-    --accent: #ffb74d;
-    --border-primary: #fff8eb;
+    --background-tertiary-hover: #6c4330;
+    --foreground-primary: #fff8eb;
+    --foreground-primary-hover: #ffffff;
+    --foreground-secondary: #2b3d41;
+    --foreground-secondary-hover: #36464a;
+    --accent: #f95738;
+    --accent-hover: #bc412a;
+    --accent-light: #f97055;
+    --border-light: #fff8eb;
+    --border-dark: #000000;
   }
 }
 
@@ -23,7 +32,7 @@
 }
 
 html {
-  font-family: "Press Start P2", sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-touch-callout: none; /* iOS Safari */
