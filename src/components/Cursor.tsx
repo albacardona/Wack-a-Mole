@@ -10,8 +10,9 @@ export const Cursor = () => {
     const setCursorY = gsap.quickTo(cursor.current, 'y', { duration: 0.01 });
 
     const onCursorMove = (e: PointerEvent) => {
-      const yOffset = -10;
-      setCursorX(e.clientX);
+      const xOffset = 15;
+      const yOffset = -15;
+      setCursorX(e.clientX + xOffset);
       setCursorY(e.clientY + yOffset);
     };
 

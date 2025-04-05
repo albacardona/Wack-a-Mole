@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <div className="flex h-10 w-screen items-center justify-center md:h-16">
       <div className="flex items-center gap-4">
-        <button type="button" onClick={handleClickAvatar} className="p-0 m-0">
+        <button type="button" onClick={handleClickAvatar} className="p-0 m-0 cursor-none">
           <div className="size-6 rounded-full border-2 border-bd-light shadow-inner-subtle md:size-8">
             {showAvatar && (
               <img className="size-full rounded-full shadow-inner" src={AlbaAvatar} alt="Alba" />
