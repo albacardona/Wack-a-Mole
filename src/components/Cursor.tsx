@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import hammer from '../assets/img/hammer.png';
+import hammer2 from '../assets/img/hammer2.png';
 import gsap from 'gsap';
 
 export const Cursor = () => {
@@ -19,13 +20,13 @@ export const Cursor = () => {
     document.body.addEventListener('pointermove', onCursorMove);
     window.addEventListener('mousedown', () => {
       if (cursor.current) {
-        cursor.current.src = 'src/assets/img/hammer2.png';
+        cursor.current.src = hammer2;
       }
     });
 
     window.addEventListener('mouseup', () => {
       if (cursor.current) {
-        cursor.current.src = 'src/assets/img/hammer.png';
+        cursor.current.src = hammer;
       }
     });
 
