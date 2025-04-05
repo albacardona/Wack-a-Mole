@@ -9,5 +9,41 @@
     "english": "Inglés",
     "french": "Francés",
     "catalan": "Catalán"
+  },
+  "button": {
+    "speed": {
+      "normal": "Normal",
+      "fast": "Rápido",
+      "crazy": "Locura"
+    },
+    "start": "Empezar",
+    "reset_all": "Reiniciar botones",
+    "play_again": "Jugar de nuevo"
+  },
+  "modal": {
+    "start": {
+      "title": "Configuración",
+      "body": "Selecciona el número de topos con los que quieres jugar, la velocidad y el tiempo de juego.",
+      "select_time": "Tiempo",
+      "select_speed": "Velocidad",
+      "select_quantity": "Cantidad",
+      "note": "Nota: cuanto mayor sea la velocidad escogida, más puntos obtienes"
+    },
+    "end": {
+      "title": "¡Tiempo!",
+      "body": {
+        "perfect": "¡Espectacular! ¡Puedes compartir tu puntuación para enseñarle a todo el mundo lo buen@ que eres!",
+        "good": "¡Genial! ¡Juega de nuevo para mejorar tu reacción!",
+        "bad": "Vaya... Parece que tu ratón tiene algún tipo de problema, ¿verdad?. No te preocupes, puedes volver a jugar y aquí no ha pasado nada."
+      },
+      "share": "Compartir en:"
+    }
+  },
+  "game": {
+    "counters": {
+      "time": "Tiempo:",
+      "speed": "Velocidad:",
+      "score": "Puntuación:"
+    }
   }
 }
