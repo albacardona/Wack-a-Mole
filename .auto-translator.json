@@ -1,6 +1,6 @@
 {
   "files": {
-    "Wack-a-mole": {
+    "Whack-a-mole": {
       "path": "src/translations/%LANGUAGE%/translation.json",
       "file_format": "i18next"
     }
