@@ -9,5 +9,41 @@
     "english": "English",
     "french": "French",
     "catalan": "Catalan"
+  },
+  "button": {
+    "speed": {
+      "normal": "Normal",
+      "fast": "Fast",
+      "crazy": "Crazy"
+    },
+    "start": "Start",
+    "reset_all": "Reset buttons",
+    "play_again": "Play again"
+  },
+  "modal": {
+    "start": {
+      "title": "Settings",
+      "body": "Select the number of moles you want to play with, the speed and the time of the game.",
+      "select_time": "Time",
+      "select_speed": "Speed",
+      "select_quantity": "Quantity",
+      "note": "Note: the higher the chosen speed, the more points you earn."
+    },
+    "end": {
+      "title": "Time's up!",
+      "body": {
+        "perfect": "Awesome! You can share your score to show everyone how good you are!",
+        "good": "Great! Play again to improve your reaction!",
+        "bad": "Well... Your mouse seems to have some kind of problem, doesn't it? Don't worry, you can play again and nothing has happened here."
+      },
+      "share": "Share on:"
+    }
+  },
+  "game": {
+    "counters": {
+      "time": "Time:",
+      "speed": "Speed:",
+      "score": "Score:"
+    }
   }
 }
