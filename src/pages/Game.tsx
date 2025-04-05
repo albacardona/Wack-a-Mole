@@ -2,15 +2,17 @@ import { Button } from '@/components/Button';
 import { Mole } from '@/components/Mole';
 import { useGame } from '@/context/game-context';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Game = () => {
+  const { t } = useTranslation();
   const { moles, speed, setQuantityOfMoles, handleSelectSpeed } = useGame();
   const [selectedButton, setSelectedButton] = useState<number | null>(null);
 
   const speedSelector = [
-    { value: 0, label: 'Easy' },
-    { value: 1, label: 'Medium' },
-    { value: 2, label: 'Hard' },
+    { value: 0, label: t('translation:button.speed.normal') },
+    { value: 1, label: t('translation:button.speed.fast') },
+    { value: 2, label: t('translation:button.speed.crazy') },
   ];
 
   const handleClickSpeed = (speed: number) => {

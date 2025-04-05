@@ -13,6 +13,7 @@ module.exports = {
         xs: '0 0 2px 0 rgba(41, 50, 60, 0.5)',
         ring: '0px 0px 0px 4px rgba(17,187,166,0.3)',
         inner: 'inset 0px 0px 10px 7px rgba(0,0,0,0.5)',
+        'inner-subtle': 'inset 0px 0px 5px 5px rgba(0,0,0,0.2)',
         'button-primary': '0px 10px 0px 0px var(--background-secondary-hover)',
         'button-primary-active': '0px 0px 0px 0px var(--background-secondary-hover)',
         'button-accent': '0px 10px 0px 0px var(--accent-hover)',
