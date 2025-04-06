@@ -14,7 +14,14 @@ interface SelectedButtons {
 export const SettingsModal = () => {
   const { t } = useTranslation();
 
-  const { moles, speed, time, setQuantityOfMoles, handleSelectSpeed, handleSelectTime } = useGame();
+  const {
+    moles,
+    speed: [speed],
+    time,
+    setQuantityOfMoles,
+    handleSelectSpeed,
+    handleSelectTime,
+  } = useGame();
   const [selectedButtons, setSelectedButtons] = useState<SelectedButtons>({
     quantity: moles.length,
     speed,
