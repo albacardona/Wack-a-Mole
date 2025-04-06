@@ -1,13 +1,15 @@
+import { Button } from '@/components/Button';
 import { Mole } from '@/components/Mole';
 import { useGame } from '@/context/game-context';
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Game = () => {
-  const { moles } = useGame();
-  const [clickedMole, setClickedMole] = useState<string | null>(null);
+  const { t } = useTranslation();
+  const { moles, showMoleRandomly, handleClickStartGame, hideMole } = useGame();
 
   const handleClickMole = (id: string) => {
-    setClickedMole(id);
+    hideMole(id);
   };
 
   const moleSize = useMemo(() => {
@@ -25,17 +27,18 @@ export const Game = () => {
 
   return (
     <div className="h-full w-full font-game">
-      <div className="flex h-full items-center justify-center">
+      <div className="h-full flex flex-col items-center justify-center gap-6">
         <div className="grid grid-cols-3 gap-x-14 gap-y-6 rounded-2xl border-4 border-bd-light bg-bg-tertiary px-20 py-10 shadow-inner md:gap-x-28 md:gap-y-10">
-          {moles?.map((id) => (
+          {moles?.map((mole) => (
             <Mole
-              key={id}
+              key={mole.id}
               size={moleSize}
-              show={clickedMole === id}
-              onClick={() => handleClickMole(id)}
+              show={mole.show}
+              onClick={() => handleClickMole(mole.id)}
             />
           ))}
         </div>
+        <Button onClick={handleClickStartGame}>{t('translation:button.start')}</Button>
       </div>
     </div>
   );
