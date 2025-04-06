@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 export const Game = () => {
   const { t } = useTranslation();
-  const { moles, showMoleRandomly, handleClickStartGame, hideMole } = useGame();
+  const { moles, handleClickStartGame, hideMole } = useGame();
 
   const handleClickMole = (id: string) => {
     hideMole(id);
