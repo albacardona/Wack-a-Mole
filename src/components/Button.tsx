@@ -7,10 +7,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-bg-secondary border-bg-secondary text-fg-primary shadow-button-primary active:shadow-button-primary-active',
+          'bg-bg-secondary border-bg-secondary text-fg-primary ring-2 ring-ring-primary shadow-button-primary active:shadow-button-primary-active',
         accent:
-          'bg-accent border-accent text-fg-primary shadow-button-accent active:shadow-button-accent-active',
-        ghost: 'bg-transparent p-0 m-0 w-fit',
+          'bg-accent border-accent text-fg-primary ring-2 ring-ring-accent shadow-button-accent active:shadow-button-accent-active',
+        ghost: 'ring-none ring-0 bg-transparent p-0 m-0 w-fit',
       },
     },
     defaultVariants: {

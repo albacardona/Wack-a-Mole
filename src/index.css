@@ -25,6 +25,8 @@
     --border-light: #fff8eb;
     --border-dark: #000000;
     --modal-overlay: rgba(255, 255, 255, 0.5);
+    --ring-accent: rgb(221, 158, 146);
+    --ring-primary: #2f5793;
   }
 }
 
